@@ -3,17 +3,17 @@ import ImageGallery from "react-image-gallery";
 
 const images = [
     {
-      original: "company_2.jpg",
-      thumbnail: "company_2.jpg",
+      original: "/images/company_2.jpg",
+      thumbnail: "/images/company_2.jpg",
   
     },
     {
-      original: "company_3.jpg",
-      thumbnail: "company_3.jpg",
+      original: "/images/company_3.jpg",
+      thumbnail: "/images/company_3.jpg",
     },
     {
-      original: "slogen.jpg",
-      thumbnail: "slogen.jpg",
+      original: "/images/slogen.jpg",
+      thumbnail: "/images/slogen.jpg",
     },
   ];
   
