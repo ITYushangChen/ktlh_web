@@ -1,0 +1,108 @@
+/* 容器整体样式 */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* 允许换行，便于移动端自适应 */
+    justify-content: center; /* 居中内容 */
+    align-items: center; /* 垂直对齐内容 */
+    padding: 100px 20px 20px; /* 确保内容不被固定的 header 覆盖 */
+    gap: 20px; /* 控制左右内容间距 */
+  }
+  
+  /* 左侧图片容器 */
+  .leftcontainer {
+    flex: 1; /* 左侧内容占用比例 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    padding: 200px 20px 20px; /* 确保内容不被固定的 header 覆盖 */
+  }
+  
+  .wechat {
+    max-width: 80%; /* 限制图片宽度 */
+    height: auto; /* 保持图片比例 */
+    border-radius: 8px; /* 添加圆角 */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+  }
+  
+  /* 右侧文字内容 */
+  .contactContainer {
+    flex: 1; /* 右侧内容占用比例 */
+    display: flex;
+    flex-direction: column; /* 垂直排列文字 */
+    justify-content: flex-start; /* 垂直对齐顶部 */
+    gap: 15px; /* 控制文字段落之间的间距 */
+    padding: 200px 20px 20px; /* 确保内容不被固定的 header 覆盖 */
+  }
+  
+  .contactContainer h2 {
+    margin: 10px 0;
+    font-size: 1.5rem; /* 标题字体大小 */
+  }
+  
+  .contactContainer p {
+    margin: 0;
+    font-size: 1.2rem; /* 正文字体大小 */
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* 可点击的文字样式 */
+  .contactContainer p:hover {
+    background-color: #92bfc6; /* 鼠标悬停背景色 */
+    border-radius: 4px; /* 添加圆角效果 */
+    transition: background-color 0.3s ease; /* 平滑过渡效果 */
+  }
+  
+  /* 图标样式 */
+  .copyIcon {
+    margin-left: 10px;
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+  
+  .contactContainer p:hover .copyIcon {
+    opacity: 1; /* 悬停时提高图标透明度 */
+    transition: opacity 0.3s ease;
+  }
+  
+  /* 响应式布局 */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* 移动设备上改为垂直布局 */
+    }
+  
+    .leftcontainer {
+      width: 100%; /* 左侧图片容器全宽 */
+      margin-bottom: 20px; /* 增加与文字部分的间距 */
+    }
+  
+    .wechat {
+      width: 80%; /* 限制图片在移动设备上的宽度 */
+      height: auto;
+    }
+  
+    .contactContainer {
+      width: 100%; /* 右侧文字容器全宽 */
+      padding: 10px;
+    }
+  
+    .contactContainer h2 {
+      font-size: 1.2rem; /* 调整标题大小 */
+    }
+  
+    .contactContainer p {
+      font-size: 0.9rem; /* 调整正文大小 */
+    }
+  }
+  
+  .text {
+    font-size: 1.2rem;
+    text-align: center; /* 居中显示 */
+    margin-bottom: 10px;
+  }
+  .contactContainer p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center; /* 文本居中 */
+  }
+    

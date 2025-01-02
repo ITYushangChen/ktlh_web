@@ -1,0 +1,15 @@
+.featuresList {
+    padding-left: 20px;
+  }
+  
+  .featuresList li {
+    margin-bottom: 10px;
+  }
+  
+  .productImage {
+    width: 100%;
+    height: auto;
+    border: 2px solid #086c7b;
+    border-radius: 5px;
+  }
+  
